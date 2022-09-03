@@ -9,9 +9,11 @@ def ordenar_por_tamanho(lista_palavras):
         return None
     
     lista_ordenada = lista_palavras[:]
+    
+    # Implementando algoritmo de ordenacao! 
     pos_ext = 0 
     while pos_ext < len(lista_ordenada):
-        pos_int = pos_ext + 1
+        pos_int = pos_ext + 1        
         while pos_int < len(lista_ordenada):
             if len(lista_ordenada[pos_ext]) > len(lista_ordenada[pos_int]):
                 lista_ordenada[pos_ext], lista_ordenada[pos_int] = lista_ordenada[pos_int], lista_ordenada[pos_ext]
